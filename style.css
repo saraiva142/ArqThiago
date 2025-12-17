@@ -51,6 +51,15 @@ body {
 .hero-left img {
   width: 220px;
   height: auto;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+/* Remova o efeito ao passar o mouse (opcional) */
+.hero-left img:hover {
+  -webkit-filter: none;
+  filter: none;
 }
 
 /* CENTER TEXT */
@@ -86,6 +95,7 @@ body {
 /* CTA */
 .cta {
   margin-top: 30px;
+  height: 10vh;
   text-align: center;
   font-size: 11px;
   letter-spacing: 1px;
@@ -102,6 +112,7 @@ body {
 /* PROJECTS SECTION */
 .projects {
   width: 100%;
+  height: 50vh;
   margin-top: 140px; /* espaço grande igual ao layout */
   padding-bottom: 10px;
 }
@@ -237,7 +248,7 @@ body {
 .final-contact {
   position: relative;
   width: 100%;
-  height: 280px;
+  height: 100vh;
   background: #000;
   color: #aaa;
 }
@@ -279,6 +290,10 @@ body {
   letter-spacing: 1px;
 }
 
+.info-brand {
+  height: 100vh;
+}
+
 /* BRAND GIGANTE */
 .brand-big {
   position: absolute;
@@ -303,4 +318,248 @@ body {
 .brand-big .dot {
   font-size: 200px;
   transform: translateY(-40px);
+}
+
+
+@media (max-width: 1024px) {
+
+  /* HEADER */
+  .header {
+    padding: 0 32px;
+  }
+
+  /* HERO */
+  .hero {
+    height: 460px;
+  }
+
+  .hero-left {
+    left: 40px;
+    top: 260px;
+  }
+
+  .hero-left img {
+    width: 180px;
+  }
+
+  .hero-center {
+    top: 280px;
+    font-size: 11px;
+  }
+
+  .hero-right {
+    right: 40px;
+  }
+
+  .hero-right img {
+    width: 280px;
+  }
+
+  /* DIVIDER */
+  .divider {
+    width: calc(100% - 80px);
+  }
+
+  /* PROJECTS */
+  .projects {
+    height: auto;
+    margin-top: 100px;
+  }
+
+  .projects-grid {
+    width: calc(100% - 80px);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-grid img {
+    height: 220px;
+  }
+
+  /* ABOUT */
+  .about-content {
+    width: calc(100% - 80px);
+  }
+
+  .about-image img {
+    width: 380px;
+  }
+
+  .about-text {
+    width: 360px;
+    font-size: 11px;
+  }
+
+  /* FINAL CONTACT */
+  .final-divider {
+    left: 40px;
+    right: 40px;
+  }
+
+  .final-info {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* INFO BRAND */
+  .info-top,
+  .info-middle {
+    left: 40px;
+    right: 40px;
+  }
+
+  .brand-big .t,
+  .brand-big .s {
+    font-size: 180px;
+  }
+
+  .brand-big .dot {
+    font-size: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* HEADER */
+  .header {
+    padding: 0 20px;
+    height: 70px;
+  }
+
+  .menu a {
+    margin-left: 16px;
+    font-size: 10px;
+  }
+
+  /* HERO */
+  .hero {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .hero-left,
+  .hero-right,
+  .hero-center {
+    position: static;
+    transform: none;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .hero-left img,
+  .hero-right img {
+    width: 220px;
+  }
+
+  .hero-center {
+    font-size: 11px;
+  }
+
+  /* CTA */
+  .cta {
+    height: auto;
+    margin-top: 40px;
+  }
+
+  /* PROJECTS */
+  .projects {
+    margin-top: 80px;
+  }
+
+  .projects-grid {
+    width: calc(100% - 40px);
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid img {
+    height: 240px;
+  }
+
+  /* ABOUT */
+  .about-black {
+    padding: 80px 0;
+  }
+
+  .about-title {
+    margin-bottom: 60px;
+  }
+
+  .about-content {
+    width: calc(100% - 40px);
+    min-height: auto;
+  }
+
+  .about-image,
+  .about-text {
+    position: static;
+    width: 100%;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto 40px;
+    display: block;
+  }
+
+  .about-text {
+    font-size: 11px;
+  }
+
+  /* FINAL CONTACT */
+  .final-contact {
+    padding: 40px 20px;
+  }
+
+  .final-divider {
+    left: 20px;
+    right: 20px;
+  }
+
+  .final-info {
+    position: static;
+    transform: none;
+    margin-top: 80px;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 11px;
+  }
+
+  /* INFO BRAND */
+  .info-brand {
+    height: auto;
+    padding: 120px 0 160px;
+  }
+
+  .info-top,
+  .info-middle {
+    position: static;
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .info-bottom {
+    position: static;
+    margin-top: 60px;
+  }
+
+  .brand-big {
+    position: static;
+    margin-top: 80px;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .brand-big .t,
+  .brand-big .s {
+    font-size: 120px;
+  }
+
+  .brand-big .dot {
+    font-size: 90px;
+    transform: none;
+  }
 }
