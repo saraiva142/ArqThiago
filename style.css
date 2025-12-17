@@ -130,7 +130,7 @@ body {
 /* IMAGENS */
 .projects-grid img {
   width: 100%;
-  height: 230px; /* altura fixa igual ao mockup */
+  aspect-ratio: 3 / 4; /* retrato: largura/altura */
   object-fit: cover;
   display: block;
 }
