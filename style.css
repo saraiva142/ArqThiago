@@ -1,0 +1,306 @@
+/* RESET TOTAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f3f1e4;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+  height: 80px;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.menu a {
+  font-size: 11px;
+  margin-left: 28px;
+  text-decoration: none;
+  color: #111;
+  letter-spacing: 1px;
+}
+
+/* HERO LAYOUT */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 520px;
+}
+
+/* LEFT IMAGE */
+.hero-left {
+  position: absolute;
+  left: 120px;
+  top: 250px;
+}
+
+.hero-left img {
+  width: 220px;
+  height: auto;
+}
+
+/* CENTER TEXT */
+.hero-center {
+  position: absolute;
+  left: 50%;
+  top: 260px;
+  transform: translateX(-50%);
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* RIGHT IMAGE */
+.hero-right {
+  position: absolute;
+  right: 100px;
+  top: 0px;
+}
+
+.hero-right img {
+  width: 360px;
+  height: auto;
+}
+
+/* DIVIDER LINE */
+.divider {
+  width: calc(100% - 240px);
+  height: 1px;
+  background: #d6d4c8;
+  margin: 40px auto 0;
+}
+
+/* CTA */
+.cta {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.cta span {
+  display: block;
+}
+
+.arrow {
+  margin-top: 6px;
+}
+
+/* PROJECTS SECTION */
+.projects {
+  width: 100%;
+  margin-top: 140px; /* espaço grande igual ao layout */
+  padding-bottom: 10px;
+}
+
+/* GRID FIXO */
+.projects-grid {
+  width: calc(100% - 240px); /* mesmo alinhamento da linha */
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; /* espaço exato entre imagens */
+}
+
+/* IMAGENS */
+.projects-grid img {
+  width: 100%;
+  height: 230px; /* altura fixa igual ao mockup */
+  object-fit: cover;
+  display: block;
+}
+
+/* INFO + BRAND */
+.info-brand {
+  position: relative;
+  width: 100%;
+  height: 460px;
+  background: #7a7a6a;
+  margin-top: 120px;
+  color: #fff;
+}
+
+/* LINHA SUPERIOR */
+.info-top {
+  position: absolute;
+  top: 40px;
+  left: 120px;
+  right: 120px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.info-top span:nth-child(2) {
+  text-align: center;
+}
+
+.info-top span:nth-child(3) {
+  text-align: right;
+}
+
+/* LINHA DO MEIO */
+.info-middle {
+  position: absolute;
+  top: 120px;
+  left: 120px;
+  right: 120px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.info-middle span:nth-child(2) {
+  text-align: center;
+}
+
+.info-middle span:nth-child(3) {
+  text-align: right;
+}
+
+/* ABOUT BLACK SECTION */
+.about-black {
+  position: relative;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* TÍTULO */
+.about-title {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 100px;
+}
+
+/* CONTEÚDO */
+.about-content {
+  position: relative;
+  width: calc(100% - 240px);
+  margin: 0 auto;
+  min-height: 520px;
+}
+
+/* IMAGEM */
+.about-image {
+  position: absolute;
+  left: 0;
+  top: 40px;
+}
+
+.about-image img {
+  width: 500px;
+  height: auto;
+}
+
+/* TEXTO */
+.about-text {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 420px;
+  font-size: 11px;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+}
+
+.about-text p {
+  margin-bottom: 22px;
+}
+
+.about-text strong {
+  font-weight: normal;
+}
+
+/* FINAL CONTACT */
+.final-contact {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  background: #000;
+  color: #aaa;
+}
+
+/* LINHA SUPERIOR */
+.final-divider {
+  position: absolute;
+  top: 40px;
+  left: 120px;
+  right: 120px;
+  height: 1px;
+  background: #222;
+}
+
+/* TEXTO CENTRAL */
+.final-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  font-size: 11px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+
+/* MADE BY */
+.info-bottom {
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+/* BRAND GIGANTE */
+.brand-big {
+  position: absolute;
+  bottom: -40px;
+  left: 60px;
+  right: 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* LETRAS */
+.brand-big .t,
+.brand-big .s {
+  font-size: 260px;
+  font-weight: 300;
+  font-weight: bolder;
+  line-height: 1;
+}
+
+.brand-big .dot {
+  font-size: 200px;
+  transform: translateY(-40px);
+}
